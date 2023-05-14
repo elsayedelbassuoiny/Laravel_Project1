@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    background-color:rgb(30, 28, 28);
+    padding: 20px 14%;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease;
+}
+.logooo{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #31E1F7;
+    text-decoration: none;
+}
+.navlist1{
+    display: flex;
+}
+.navlist1 a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin: 0 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+.navlist1 a:hover{
+    color: #31E1F7;
+}
+.navlist1 .active{
+    color: #31E1F7;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    height: 730px;
+  }
+
+  .slides {
+    position: relative;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slides img {
+    width: 100%;
+
+  }
+
+  .slide {
+    width: 100%;
+  }
+
+  .slide:nth-child(1) {
+    order: 1;
+  }
+
+  .slide:nth-child(2) {
+    order: 2;
+  }
+
+  .slide:nth-child(3) {
+    order: 3;
+  }
+
+  .slide:nth-child(4) {
+    order: 4;
+  }
+.title {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    margin-top: 320px;
+    font-size: 30px;
+    color: aliceblue;
+}
+.pragraph{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.main_container{
+    width: 100vw ;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    width: 30%;
+    height: 20vh;
+    border-radius: 12px;
+    margin: 10px 120px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,139);
+  }
+
+  h3{
+      color : rgba(0,0,139);
+  }
+
+  .button {
+    border: 1px solid  rgba(0,0,139);
+    color: rgba(0,0,139);
+    background-color: rgba(256,256,256);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight : bold;
+    margin: 4px 2px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: rgba(0,0,139);
+    color: white;
+  }
+
+
+
+  .container {
+    padding: 5px 15px;
+  }
+
