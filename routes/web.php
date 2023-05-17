@@ -48,3 +48,4 @@ Route::post('/create',  [DeparmentController::class,'dataInsert']);
 
 
 Route::resource('/subjects',SubjectController::class);
+Route::resource('/departments',DeparmentController::class);

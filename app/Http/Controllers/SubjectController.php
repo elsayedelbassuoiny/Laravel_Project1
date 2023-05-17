@@ -51,7 +51,8 @@ class SubjectController extends Controller
     public function edit(Subject $subject)
     {
         $departmets= Department::get();
-        return view('subjects.edit',['subject' => $subject,'departmets'=>$departmets]);
+        $subjects=Subject::get();
+        return view('subjects.edit',['departmets'=>$departmets,'subject' => $subject,'subjects' => $subjects]);
     }
 
     public function update(Request $request, $id)

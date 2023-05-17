@@ -21,16 +21,16 @@
 
 .card:hover {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
-  border: 1px solid rgba(0,0,139);
+  border: 1px solid #31E1F7;
 }
 
 h3{
-	color : rgba(0,0,139);
+	color :#31E1F7;
 }
 
 .button {
-  border: 1px solid  rgba(0,0,139);
-  color: rgba(0,0,139);
+  border: 1px solid #31E1F7;
+  color:#31E1F7;
   background-color: rgba(256,256,256);
   padding: 10px;
   text-align: center;
@@ -43,7 +43,7 @@ h3{
   cursor: pointer;
 }
 .button:hover {
-  background-color: rgba(0,0,139);
+  background-color: #31E1F7;
   color: white;
 }
 
@@ -54,7 +54,7 @@ h3{
 }
 
 a{
-    color: rgba(0,0,139);
+    color: #31E1F7;
     text-decoration: none;
     font-weight: bold;
     font-size: .88rem;
@@ -62,7 +62,7 @@ a{
 }
 
 h1{
-    color: rgba(0,0,139);
+    color:#31E1F7;
     margin: 30px;
     text-align: center;
     font-size: 60px;
@@ -80,7 +80,7 @@ h1{
 </head>
 <body>
 
-<h1 style="background-color:rgba(0,0,139); color: white; margin:0% ; padding:20px; ">All Subjects</h1>
+<h1 style="background-color:#31E1F7; color: white; margin:0% ; padding:20px; ">All Subjects</h1>
 @foreach ($subjects as $subject )
 <div class="main_container">
     <div class="card">

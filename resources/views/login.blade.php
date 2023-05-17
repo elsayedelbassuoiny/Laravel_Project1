@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="{{asset('css/login.css')}}">
     <title>Document</title>
     <style>
-        body{
+        section{
             background-image: url("{{asset('images/grad.jpg')}}");
+
         }
 
     </style>
@@ -22,11 +23,11 @@
                 <div class="form_value">
                     <h2>Login</h2>
                     <div class="input_box">
-                        <input type="email" name="email" id="email" value="admin@fci.com" required>
+                        <input type="email" name="email" id="email" required>
                         <label for="email">email</label>
                     </div>
                     <div class="input_box">
-                        <input type="password" name="password" id="password" value="admin" required>
+                        <input type="password" name="password" id="password" required>
                         <label for="password">password</label>
                     </div>
                     <div class="radio_box">

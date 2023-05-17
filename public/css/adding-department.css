@@ -1,34 +1,25 @@
-.departmet-box{
-   justify-content: center;
-    display: inline-flex;
-   align-items: center;
-   width: 700px;
-   height: 100px;
-   border: 1px solid black;
-   border-radius: 20px;
-   margin-left: 45px;
-   margin-top: 30px;
-
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.departmet-box .dep-img{
-    display: inline-flex;
-    width: 45px;
-    margin-right: 10px;
-    margin-left: -560px;
-}
-.dep-title{
-display: inline-flex;
-font-family: Arial, Helvetica, sans-serif;
-font-size: larger;
 
+.container{
+    margin-top: 50px;
+    display: inline-block;
+    width: 100%;
 }
+
 a{
     text-decoration: none;
 }
-.departmet-box:hover{
+.dep-title{
+    color: black;
+    font-size: 25px;
+}
+.dep-title:hover{
     color: #31E1F7;
-    border: 1px solid #31E1F7;
+    cursor: pointer;
 }
 .add .btn-add{
     width: 270px;
@@ -45,31 +36,17 @@ a{
     background-color: #31E1F7;
     color: white;
 }
-#my-form{
-    margin-left: 550px;
-    margin-top: 50px;
-    border: 1px solid black;
-    width: 500px;
-    padding: 50px;
-    border-radius: 45px;
-    display: none;
-}
-#my-form label{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    padding: 5px;
-}
-#my-form .button{
-    margin-top: 30px;
-    margin-left: 160px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    border: 3px solid #31E1F7;
+.edit{
+    margin-left: 1390px;
+    border: 1px solid rgb(54, 159, 207);
     border-radius: 10px;
-    font-size: larger;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(54, 159, 207);
+    margin-right: 10px;
+
 }
-#my-form .button:hover{
-    background-color: #31E1F7;
+.edit:hover{
+    background-color: rgb(54, 159, 207);
     color: white;
 }
-
