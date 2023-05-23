@@ -28,7 +28,7 @@ return new class extends Migration
 
             $table->foreign("pre_requisite")->references("id")->on("subjects");
             $table->foreign("doctor_id")->references("id")->on("subjects");
-            // $table->foreign("department_id")->references("id")->on("departments");
+            $table->foreign("department_id")->references("id")->on("departments");
         });
     }
 

@@ -41,7 +41,8 @@
             <select name="doc" id="doc">
                 <option value="{{$subject->id}}">{{$subject-> doctor_id }}</option>
               @foreach ($doctors as $doctor)
-               <option value="{{$doctor -> id}}">{{$doctor -> name }}</option>
+               <option value="{{$doctor -> id}}">{{ App\Models\Doctor::find($doctor->id)->name }}</option>
+               {{-- <option value="{{$doctor -> id}}">{{ $doctor -> name }}</option> --}}
               @endforeach
             </select>
           </div>
