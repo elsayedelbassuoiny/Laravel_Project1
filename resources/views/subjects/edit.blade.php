@@ -36,6 +36,15 @@
               @endforeach
             </select>
           </div>
+          <div class="form-group">
+            <label for="doc">Doctors:</label>
+            <select name="doc" id="doc">
+                <option value="{{$subject->id}}">{{$subject-> doctor_id }}</option>
+              @foreach ($doctors as $doctor)
+               <option value="{{$doctor -> id}}">{{$doctor -> name }}</option>
+              @endforeach
+            </select>
+          </div>
         <div class="form-group">
           <input type="submit" value="Send">
           <input type="button" value="Clear" onclick="clearForm()">

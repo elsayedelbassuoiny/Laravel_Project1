@@ -22,7 +22,7 @@ label {
     margin-bottom: 5px;
   }
 
-  input[type="text"], textarea ,#dep,#pre{
+  input[type="text"], textarea ,#dep,#pre,#doc{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;

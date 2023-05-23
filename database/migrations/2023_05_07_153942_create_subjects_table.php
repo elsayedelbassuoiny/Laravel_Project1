@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string("name");
             $table->string("code");
             $table->unsignedBigInteger("pre_requisite")->nullable(true);
-            $table->json("files");
-            $table->json("students");
+            $table->json("files")->nullable(true);
+            $table->json("students")->nullable(true);
             $table->unsignedBigInteger('doctor_id');
             $table->timestamps();
 
