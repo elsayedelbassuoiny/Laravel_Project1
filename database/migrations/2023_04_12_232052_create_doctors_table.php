@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignIdFor('App\Models\Department', 'department_id');
             $table->string('email');
             $table->string('password');
+            $table->string('name');
             $table->foreign('department_id')->references('id')->on('departments');
         });
     }

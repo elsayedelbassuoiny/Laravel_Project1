@@ -22,6 +22,7 @@ class DoctorFactory extends Factory
         return [
             'email' => fake()->email(),
             'password' => fake()->password(),
+            'name' => fake()->name(),
             'department_id' => $department_id
         ];
     }

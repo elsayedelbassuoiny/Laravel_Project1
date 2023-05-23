@@ -122,7 +122,13 @@ class SubjectController extends Controller
         $studentSubjects = json_decode($activeStudent->assign_subjects);
         array_push($studentSubjects , [(int)$id, null]);
         $activeStudent->assign_subjects = json_encode($studentSubjects);
+
+        $assignCourse=Subject::find($id);
+        $studentsidassign = json_decode($assignCourse->students);
+        array_push($studentsidassign ,  $activeStudent->id );
+        $assignCourse->students = json_encode($studentsidassign);
         $activeStudent->save();
+        $assignCourse->save();
 
         session([LoginController::ACTIVE_STUDENT_KEY => serialize($activeStudent)]);
 
